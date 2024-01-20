@@ -10,10 +10,10 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default:
-          "hover:bg-primary-light-green focus:bg-primary-light-green text-neutral-dark cursor-pointer rounded-full bg-primary-green",
+          "hover:bg-primary-light-green focus:bg-primary-light-green text-neutral-dark cursor-pointer rounded-full bg-primary-green shadow-[0_25px_20px_-20px_rgba(84,230,175,0.50)]",
       },
       size: {
-        default: "w-full px-6 py-2 text-[0.875rem] leading-7",
+        default: "px-6 py-2 text-[0.875rem] leading-7",
       },
     },
     defaultVariants: {
