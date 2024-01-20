@@ -1,8 +1,8 @@
 import type { Metadata } from "next"
-import { Poppins } from "next/font/google"
+import { Chivo } from "next/font/google"
 import "./globals.css"
 
-const poppins = Poppins({
+const chivo = Chivo({
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
@@ -10,7 +10,7 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: "Intro component with sign up form",
+  title: "Pod Request Access Landing Page",
   description: "A Challenge from Frontend Mentor!",
 }
 
@@ -30,7 +30,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${poppins.className} flex min-h-screen flex-col items-center justify-center bg-primary-red`}
+        className={`${chivo.className} bg-neutral-dark flex min-h-screen flex-col items-center justify-center text-white`}
       >
         {children}
       </body>

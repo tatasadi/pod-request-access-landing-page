@@ -8,7 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      colors: {},
+      colors: {
+        primary: {
+          green: "hsl(157, 74%, 62%)",
+        },
+        neutral: {
+          "gray-700": "hsl(225, 26%, 23%)",
+          "gray-400": "hsl(225, 21%, 45%)",
+          "gray-100": "hsl(225, 40%, 83%)",
+          dark: "hsl(224, 35%, 11%)",
+        },
+      },
     },
   },
   plugins: [],
