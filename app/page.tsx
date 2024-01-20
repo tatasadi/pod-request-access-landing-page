@@ -44,13 +44,17 @@ export default function Home() {
   }
 
   return (
-    <main className="flex h-full min-h-screen w-full max-w-6xl flex-col items-center px-6 lg:min-h-0">
-      <div className="relative">
-        <div className="absolute inset-0 z-[-1] bg-opacity-50 bg-[url('../public/images/mobile/image-host.jpg')] bg-cover bg-no-repeat sm:inset-auto sm:bottom-0 sm:right-0 sm:top-0 sm:w-2/3 sm:bg-[url('../public/images/tablet/image-host.jpg')]"></div>
+    <main className="flex h-full min-h-screen w-full max-w-7xl flex-col items-center lg:min-h-0 lg:pt-32">
+      <div className="relative flex w-full flex-col items-center sm:items-start">
+        <div className="absolute inset-0 z-[-1] bg-opacity-50 bg-[url('../public/images/mobile/image-host.jpg')] bg-cover bg-no-repeat sm:inset-auto sm:bottom-0 sm:right-0 sm:top-0 sm:w-2/3 sm:bg-[url('../public/images/tablet/image-host.jpg')] lg:top-20 lg:w-3/5 lg:bg-[url('../public/images/desktop/image-host.jpg')] lg:bg-center"></div>
         <div className="bg-neutral-dark absolute inset-0 z-[-1] bg-opacity-90 sm:hidden"></div>
-        <Image src={logo} alt="logo" className="my-12 sm:mb-44" />
-        <div className="sm:bg-neutral-dark flex flex-col sm:w-5/6 sm:max-w-[50rem] sm:pt-24">
-          <h1 className="order-1 mb-4 text-center text-[1.625rem] uppercase leading-[2.375rem] sm:text-left sm:text-[3rem] sm:leading-[3.5rem]">
+        <Image
+          src={logo}
+          alt="logo"
+          className="my-12 sm:mb-72 sm:ml-12 lg:mb-28 lg:mt-0"
+        />
+        <div className="sm:bg-neutral-dark flex flex-col px-6 sm:w-5/6 sm:max-w-[50rem] sm:pt-16">
+          <h1 className="order-1 mb-4 text-center text-[1.625rem] uppercase leading-[2.375rem] sm:text-left sm:text-[3rem] sm:leading-[3.5rem] lg:text-[3.25rem] lg:leading-[3.875rem]">
             <span className="block text-primary-green">
               Publish your podcasts
             </span>{" "}
@@ -61,7 +65,7 @@ export default function Home() {
             distribute your podcast to Spotify, Apple Podcasts, Google Podcasts,
             Pocket Casts and more!
           </p>
-          <div className="order-3 mb-12 flex items-center gap-6 sm:order-4 sm:mt-16">
+          <div className="order-3 mb-12 flex w-full items-center justify-between gap-6 sm:order-4 sm:mb-0 sm:mt-16 sm:justify-start">
             <Image src={spotify} alt="spotify" className="w-[3.5rem] sm:w-24" />
             <Image
               src={applePodcast}
@@ -112,7 +116,7 @@ export default function Home() {
           <Image
             src={bgPatternDots}
             alt="background pattern"
-            className="absolute -bottom-[10rem]  left-0  order-last hidden self-start sm:block"
+            className="absolute -bottom-[14rem] left-0 order-last ml-8 hidden self-start sm:block lg:-bottom-[3rem] lg:left-auto lg:right-0"
           />
         </div>
       </div>
